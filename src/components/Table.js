@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from 'react';
+import Table from 'react-bootstrap/Table';
 import planetContext from '../contexts/planetContext';
 
-function Table() {
+function TablePlanets() {
   const { planets, getPlanets, isLoading } = useContext(planetContext);
 
   useEffect(() => {
@@ -11,7 +12,7 @@ function Table() {
   return (
     <div>
       {planets.length && !isLoading ? (
-        <table>
+        <Table striped bordered hover>
           <thead>
             <tr>
               <th>Name</th>
@@ -42,11 +43,11 @@ function Table() {
             }
           </tbody>
 
-        </table>
+        </Table>
       ) : null}
     </div>
 
   );
 }
 
-export default Table;
+export default TablePlanets;

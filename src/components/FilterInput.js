@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import Form from 'react-bootstrap/Form';
 import planetContext from '../contexts/planetContext';
 
 function FilterInput() {
@@ -20,20 +21,20 @@ function FilterInput() {
   }
 
   return (
-    <fieldset>
-      <label htmlFor="planet-name-input">
-        Nome:
-        <input
-          name="planet-name-input"
-          id="planet-name-input"
-          type="text"
+    <Form>
+      <Form.Group className="mb-2 p-2" controlId="formBasicEmail">
+        <Form.Label>
+          Nome:
+        </Form.Label>
+        <Form.Control
+          type="email"
+          placeholder="Digite o nome do planeta"
           value={ inputText }
           onChange={ handleInputChange }
           data-testid="name-filter"
         />
-      </label>
-
-    </fieldset>
+      </Form.Group>
+    </Form>
   );
 }
 
