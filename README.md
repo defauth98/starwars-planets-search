@@ -9,6 +9,10 @@
 
 Busca nos planetas da saga de filmes starwars;
 
+### :rocket: Link
+
+[Clique aqui para acessar](https://defauth98.github.io/starwars-planets-search/)
+
 ### :nut_and_bolt: Tecnologias
 
 Esse projeto foi desenvolvido com a seguinte técnologias:
@@ -17,7 +21,7 @@ Esse projeto foi desenvolvido com a seguinte técnologias:
 
 [reactjs]: https://reactjs.org
 
-#### :thinking: Como rodar
+### :thinking: Como rodar
 
 ```bash
 # Clone o repositório
