@@ -1,27 +1,36 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Navbar from 'react-bootstrap/Navbar';
 
 import Table from '../components/Table';
 import FilterInput from '../components/FilterInput';
 import NumericFilters from '../components/NumericFilters';
 
+import './styles.css';
+
 function ListPlanetPage() {
   return (
-    <main>
-      <Form>
-        <Row>
-          <Col>
-            <FilterInput />
-          </Col>
-          <Col>
-            <NumericFilters />
-          </Col>
-        </Row>
-      </Form>
-      <Table />
-    </main>
+    <div className="list-planets-page">
+      <Navbar
+        bg="dark"
+        variant="dark"
+        className="justify-content-center text-white fs-2"
+      >
+        <span role="img" aria-label="Rocket emoji">🚀 </span>
+        {' '}
+        Starwars Planet Search
+      </Navbar>
+
+      <main className="filters-container w-70">
+        <Form className="form">
+          <FilterInput />
+          <NumericFilters />
+        </Form>
+        <Table />
+      </main>
+
+    </div>
+
   );
 }
 

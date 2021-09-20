@@ -28,9 +28,13 @@ function NumericFilters() {
   }
 
   return (
-    <Form className="mt-4">
+    <Form className="d-flex flex-column justify-content-center">
+      <Form.Label>
+        Filtrar por propriedade:
+      </Form.Label>
       <Row>
         <Col>
+
           <Form.Select
             aria-label="Default select example"
             name="colum-filter"

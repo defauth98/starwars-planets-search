@@ -22,13 +22,16 @@ function FilterInput() {
 
   return (
     <Form>
-      <Form.Group className="mb-2 p-2" controlId="formBasicEmail">
+      <Form.Group
+        className="d-flex flex-column justify-content-center p-2"
+        controlId="formBasicEmail"
+      >
         <Form.Label>
-          Nome:
+          Filtrar por nome:
         </Form.Label>
         <Form.Control
           type="email"
-          placeholder="Digite o nome do planeta"
+          placeholder="Nome do planeta"
           value={ inputText }
           onChange={ handleInputChange }
           data-testid="name-filter"

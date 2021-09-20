@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import planetContext from '../contexts/planetContext';
 
+import './table.css';
+
 function TablePlanets() {
   const { planets, getPlanets, isLoading } = useContext(planetContext);
 
@@ -12,17 +14,17 @@ function TablePlanets() {
   return (
     <div>
       {planets.length && !isLoading ? (
-        <Table striped bordered hover>
+        <Table className="mt-4" size="sm" striped bordered hover responsive>
           <thead>
             <tr>
               <th>Name</th>
-              <th>Rotation Period</th>
-              <th>Orbital Period</th>
+              <th>Rotation</th>
+              <th>Orbital</th>
               <th>Diameter</th>
               <th>Climate</th>
               <th>Gravity</th>
               <th>Terrain</th>
-              <th>Surface Water</th>
+              <th>Water</th>
               <th>Population</th>
               <th>Films</th>
               <th>Created</th>
