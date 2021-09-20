@@ -1,0 +1,1 @@
+{"version":3,"sources":["table.css","styles.css"],"names":[],"mappings":"AAAA,OACE,eAAgB,CAChB,eACF,CCHA,mBACE,eAAgB,CAChB,aACF,CAEA,MACE,YACF","file":"main.dcc40f05.chunk.css","sourcesContent":[".table {\n  max-width: 800px;\n  overflow: scroll;\n}",".filters-container {\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.form {\n  display: flex;\n}"]}
