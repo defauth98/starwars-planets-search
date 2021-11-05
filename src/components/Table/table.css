@@ -1,0 +1,12 @@
+.table {
+  max-width: 800px;
+  overflow: scroll;
+}
+
+.loading-container {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

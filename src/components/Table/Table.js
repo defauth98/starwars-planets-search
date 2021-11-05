@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
-import planetContext from '../contexts/planetContext';
+import planetContext from '../../contexts/planetContext';
+import Loading from '../loading';
 
 import './table.css';
 
@@ -15,6 +16,11 @@ function TablePlanets() {
     <div>
       <h2>Planetas</h2>
 
+      {isLoading && (
+        <div className="loading-container">
+          <Loading color="black" type="spin" />
+        </div>
+      )}
       {planets.length && !isLoading ? (
         <Table className="mt-4" size="sm" bordered hover responsive>
           <thead>

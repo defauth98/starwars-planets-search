@@ -2,9 +2,9 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 
-import Table from '../components/Table';
-import FilterInput from '../components/FilterInput';
-import NumericFilters from '../components/NumericFilters';
+import Table from '../../components/Table/Table';
+import FilterInput from '../../components/FilterInput';
+import NumericFilters from '../../components/NumericFilters';
 
 import './styles.css';
 

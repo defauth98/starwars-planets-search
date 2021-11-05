@@ -30,7 +30,6 @@ function FilterInput() {
           Filtrar por nome:
         </Form.Label>
         <Form.Control
-          type="email"
           placeholder="Nome do planeta"
           value={ inputText }
           onChange={ handleInputChange }

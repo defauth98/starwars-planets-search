@@ -1,6 +1,6 @@
 import React from 'react';
 import PlanetProvider from './contexts/PlanetProvider';
-import ListPlanetPage from './pages/ListPlanetsPage';
+import ListPlanetPage from './pages/ListPlanets/ListPlanetsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
