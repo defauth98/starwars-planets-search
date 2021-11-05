@@ -13,8 +13,10 @@ function TablePlanets() {
 
   return (
     <div>
+      <h2>Planetas</h2>
+
       {planets.length && !isLoading ? (
-        <Table className="mt-4" size="sm" striped bordered hover responsive>
+        <Table className="mt-4" size="sm" bordered hover responsive>
           <thead>
             <tr>
               <th>Name</th>
@@ -37,14 +39,25 @@ function TablePlanets() {
             {
               planets.map((planet, index) => (
                 <tr key={ index }>
-                  {Object
-                    .values(planet)
-                    .map((item) => <td key={ item }>{item}</td>)}
+                  {
+                    Object
+                      .values(planet)
+                      .map(
+                        (item) => (
+                          <td
+                            key={ item }
+                          >
+                            {
+                              typeof item === 'string' || typeof item === 'number'
+                                ? item : item[0]
+                            }
+                          </td>),
+                      )
+                  }
                 </tr>
               ))
             }
           </tbody>
-
         </Table>
       ) : null}
     </div>
